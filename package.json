@@ -1,6 +1,6 @@
 {
   "name": "danger-map",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "app to account where people has been robbed in a location on university campus",
   "main": "index.js",
   "scripts": {
