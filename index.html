@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Danger Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+      .angular-google-map-container {
+        height: 800px;
+      }
+    </style>
+  </head>
+  <body ng-cloak ng-app="dangerMap">
+    <div ng-controller="MapController as vm">
+      <div class="container">
+        <div>
+          <h1 class="text-center">Foi assaltado no campus?</h1>
+          <p class="text-center">Clique no mapa onde aconteceu</p>
+        </div>
+      </div>
+      <ui-gmap-google-map center="vm.map.center" zoom="vm.map.zoom" events="vm.map.events"></ui-gmap-google-map>
+    </div>
+
+    <div class="parent-modal"></div>
+
+    <script type="text/ng-template" id="ra-input.html">
+      <div>
+        <form ng-submit="vm.submitRa()">
+          <div>
+            <label for="ra">RA:</label><input ng-model="vm.ra" type="text" name="ra">
+          </div>
+          <div>
+            <button>Salvar RA e posição</button>
+          </div>
+        </form>
+      </div>
+    </script>
+
+    <script type="text/javascript" src="./node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="./node_modules/lodash/lodash.min.js"></script>
+    <script type="text/javascript" src="./node_modules/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
+    <script type="text/javascript" src="./node_modules/angular-animate/angular-animate.min.js"></script>
+    <script type="text/javascript" src="./node_modules/angular-touch/angular-touch.min.js"></script>
+    <script type="text/javascript" src="./node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+    <script type="text/javascript" src="./node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+    <script type="text/javascript" src="./node_modules/angular-google-maps/dist/angular-google-maps.min.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+  </body>
+</html>
