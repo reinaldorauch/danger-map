@@ -1,0 +1,24 @@
+{
+  "name": "danger-map",
+  "version": "1.0.0",
+  "description": "app to account where people has been robbed in a location on university campus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Reinaldo A. C. Rauch",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-animate": "^1.6.6",
+    "angular-google-maps": "^2.4.1",
+    "angular-simple-logger": "^0.1.7",
+    "angular-touch": "^1.6.6",
+    "angular-ui-bootstrap": "^2.5.0",
+    "bootstrap": "^3.3.7",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  }
+}
